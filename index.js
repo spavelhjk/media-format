@@ -11,13 +11,13 @@ function timeReplace(format, obj) {
 	return format;
 }
 
-function videoFormat(vid, format) {
+function videoFormat(media, format) {
 	if(typeof format !== 'string') {
 		throw new TypeError('Incorrect "format" type. The "format" must be a string').message;
 	}
 
-	let curr = vid.currentTime;
-	let durr = vid.duration;
+	let curr = media.currentTime;
+	let durr = media.duration;
 
 	let res = {};
 	res['|Pc|'] = ((curr / durr) * 100).toFixed(0);
