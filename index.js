@@ -1,4 +1,4 @@
-function videoFormat(media, format) {
+function mediaFormat(media, format) {
 	function timeDetect(val) {
 		return val > 60 ? val % 60 : val;
 	}
